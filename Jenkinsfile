@@ -8,5 +8,13 @@ pipeline{
                 '''
             }
         }
+
+         stage('Subir Servicio Ejecución'){
+            steps{
+                sh '''
+                sudo docker compose up -d 
+                '''
+            }
+        }
     }
 }
